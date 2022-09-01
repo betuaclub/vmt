@@ -10,6 +10,8 @@ pkg install qemu-system-x86_64-headless
 echo -e "\033[1;31mNow we are good with usage of echo command\033[0m"
 pkg install qemu-system-x86-64
 echo -n  "This is one more line"
+pkg install qemu-utils
+echo -n  "This is one more line"
 pkg install curl
 echo -n  "This is one more line"
 curl http://dl-cdn.alpinelinux.org/alpine/v3.10/releases/x86_64/alpine-virt-3.10.1-x86_64.iso -o alpine.iso
