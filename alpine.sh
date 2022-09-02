@@ -1,18 +1,10 @@
 #!/usr/bin/bash
+apt update&&apt upgrade
 echo "Wellcome To Linux installed: $(date)"
 echo "Linux User Name: $whoami"
 echo -e "This is qemu virt.\n"
-pkg install x11-repo
-echo -n  "This is one more line"
-pkg install unstable-repo
-echo -n  "This is one more line"
-pkg install qemu-system-x86_64-headless
-echo -e "\033[1;31mNow we are good with usage of echo command\033[0m"
-pkg install qemu-system-x86-64
-echo -n  "This is one more line"
-pkg install qemu-utils
-echo -n  "This is one more line"
-pkg install curl
+pkg install x11-repo unstable-repo qemu-utils qemu-system-x86_64-headless curl
+apt update&&apt upgrade
 echo -n  "This is one more line"
 curl http://dl-cdn.alpinelinux.org/alpine/v3.10/releases/x86_64/alpine-virt-3.10.1-x86_64.iso -o alpine.iso
 echo -n  "This is one more line"
